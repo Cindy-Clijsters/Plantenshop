@@ -16,12 +16,17 @@
 <link rel='stylesheet' type='text/css' href='css/plantenshop.css'  />
 <link rel='stylesheet' type='text/css' href='css/forms.css'  />
 
+<link rel='stylesheet' type='text/css' href='js/vendor/jquery/jquery-ui.min.css'  /> 
+<link rel='stylesheet' type='text/css' href='js/vendor/jquery/jquery-ui.structure.min.css'  /> 
+
 <!-- pagina-gebondenstylesheets --></head>
 
 {$paginaStylesheets}
 
 <!-- algemene JS scripts voor alle pagina's via vaste SCRIPT elementen-->
 <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="js/vendor/jquery/external/jquery/jquery.js"></script>
+<script src="js/vendor/jquery/jquery-ui.min.js"></script> 
 
 <!-- pagina-gebonden JS scripts-->
 {$paginaScripts}
