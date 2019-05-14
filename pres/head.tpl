@@ -16,8 +16,10 @@
 <link rel='stylesheet' type='text/css' href='css/plantenshop.css'  />
 <link rel='stylesheet' type='text/css' href='css/forms.css'  />
 
-<link rel='stylesheet' type='text/css' href='js/vendor/jquery/jquery-ui.min.css'  /> 
-<link rel='stylesheet' type='text/css' href='js/vendor/jquery/jquery-ui.structure.min.css'  /> 
+<link rel='stylesheet' type='text/css' href='js/vendor/jquery/jquery-ui.css'  /> 
+<link rel='stylesheet' type='text/css' href='js/vendor/jquery/jquery-ui.structure.css'  />
+<link rel='stylesheet' type='text/css' href='js/vendor/jquery/jquery-ui.theme.css' />
+
 
 <!-- pagina-gebondenstylesheets --></head>
 

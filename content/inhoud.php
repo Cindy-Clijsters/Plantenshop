@@ -289,59 +289,62 @@ function getPlanten($soort_id, $kleur, $hoogte_min, $hoogte_max){
 	$kleurendropdown 	= $PS->geefDDAlleKleuren();//array van kleuren
 
 	//keuzelijst object. method parse() returnt HTML
-	$soorten_dd 		= $soortendropdown	->parse();
-	$kleuren_dd 		= $kleurendropdown	->parse();
+	$soorten_dd 		= $soortendropdown->parse();
+	$kleuren_dd 		= $kleurendropdown->parse();
 
 	//======output===================
 	
 	$str =  "<section>
-			<h2>Ons plantenaanbod</h2>
-    		<p>Om te kunnen bestellen moet je een geregistreerde klant zijn: <a href='index.php?page=registreer'>registreer hier</a></p>
-			</section>";
+                    <h2>Ons plantenaanbod</h2>
+                    <p>Om te kunnen bestellen moet je een geregistreerde klant zijn: <a href='index.php?page=registreer'>registreer hier</a></p>
+		</section>";
 	
 	
 	//zoeken 
 	$str .= "<section>
-			<div id='zoeken'>
-      		<p><a id='adv_zoeken_link' href='#'>geavanceerd zoeken</a></p>
+                    <div id='zoeken'>
+                        <p><a id='adv_zoeken_link' href='#'>geavanceerd zoeken</a></p>
 			
 			<form name='frm1' id='frm1' class='cmxform' action='index.php' method='get'>
-			<input type='hidden' name='page' value='shop' />
-			<div><label for='soort_id'>Soorten: </label>". $soorten_dd . "</div>";
+                            <input type='hidden' name='page' value='shop' />
+                            <div><label for='soort_id'>Soorten: </label>". $soorten_dd . "</div>";
     
-	//adv zoeken
-		$str .= "<!--start geavanceerd zoeken -->
-				<div id='adv_zoeken' style='display:none' >"; // 
+        //adv zoeken
+        $str .= "<!--start geavanceerd zoeken -->
+		 <div id='adv_zoeken'>"; // 
 		
-		$str .= "<div><label for='kleur'>kleur: </label>". $kleuren_dd . "</div>";
-		$str .= "<div>
-					<label for='hoogte'>hoogte tussen: </label>
-					<div class='controlbox vert'>
-					<input type='text' id='hoogte_min' name='hoogte_min' size='4' class='kort' value='0'  /> en
-					<input type='text' id='hoogte_max' name='hoogte_max' size='4' class='kort' value='5000' />
-					</div>
-					</div>";
+        $str .= "<div><label for='kleur'>kleur: </label>". $kleuren_dd . "</div>";
+        $str .= "<div>
+                    <label for='hoogte'>hoogte tussen: </label>
+			<div class='controlbox vert'>
+                            <input type='text' id='hoogte_min' name='hoogte_min' size='4' class='kort' /> en
+                            <input type='text' id='hoogte_max' name='hoogte_max' size='4' class='kort' />
+			</div>
+		</div>";
 						
-		$str .= "<div>
-					<label></label>
-					<div class='controlbox vert'>
-
-					<!--start slider -->
+        $str .= "<div>
+                    <label></label>
+                    <div class='controlbox vert'>
+                        <!--start slider -->
+                        <div id='slider-range-hoogte' class='slider'></div>
+                        <!--einde slider -->
+                    </div>
+		</div>";								
 					
-					<!--einde slider -->
-					
-					</div>
-					</div>";								
-					
-		$str .= "</div>
-				<!--  einde geavanceerd zoeken -->";
+        $str .= "</div>
+	<!--  einde geavanceerd zoeken -->";
 	  
     
-	$str .= "<div><label></label><div class='controlbox hor'><input type='submit' value='zoeken' /><input type='reset' /></div></div>
+	$str .= "<div>
+                    <label></label>
+                    <div class='controlbox hor'>
+                        <input type='submit' value='zoeken' /><input type='reset' />
+                    </div>
+                </div>
       		</form>
     
-			</div>
-			</section>";
+                </div>
+		</section>";
 	
 	//de tabel
 	$str .= "<section>". $tbl_Planten. "</section>";

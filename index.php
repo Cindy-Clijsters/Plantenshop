@@ -53,9 +53,11 @@ if(isset($_GET['page'])){
 
 
             $tpl['title']   = "de Plantenshop: ons aanbod"; 		
-            $tpl['body_id'] = "shop";					
+            $tpl['body_id'] = "shop";
+            
             //content
-            $tpl['rechts']  = getPlanten($soort_id, $kleur, $hoogte_min, $hoogte_max);
+            $tpl['rechts']        = getPlanten($soort_id, $kleur, $hoogte_min, $hoogte_max);
+            $tpl['paginaScripts'] = getScriptElements("js/shop.js");
 
             break;
 
