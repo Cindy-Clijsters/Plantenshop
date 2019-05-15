@@ -78,9 +78,8 @@ if(isset($_GET['page'])){
 
             $tpl['title']   = "de Plantenshop: registreer u als klant"; 		
             $tpl['body_id'] = "registreer";					
-            //content
             $tpl['rechts']  = getRegistreer();
-
+            $tpl['paginaScripts'] = getScriptElements(array("js/vendor/jquery/jquery-validation-1.19.0/dist/jquery.validate.min.js", "js/registreer.js")); 
             break;		
 
         default:

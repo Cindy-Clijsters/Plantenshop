@@ -353,132 +353,128 @@ function getPlanten($soort_id, $kleur, $hoogte_min, $hoogte_max){
 }
 //*************************************************
 function getRegistreer(){
-	//Home pagina
-	
+    
+	//Home pagina	
 	global $PS;
 	
 	//======Componenten===================
 	
-	$soortendd 	= $PS->geefDDAlleSoortenMultiple();//dropdown multiple select
-	//keuzelijst object. method parse() returnt HTML
-	$soortendropdown = $soortendd->parse();
-	
-		
+	$soortendd 	 = $PS->geefDDAlleSoortenMultiple(); //dropdown multiple select
+	$soortendropdown = $soortendd->parse(); //keuzelijst object. method parse() returnt HTML
+			
 	//======inhoud===================	
-	
+
+        $str = "<section>
+                <h2>Registreer</h2>
+                <p>Verplichte velden zijn aangeduid met een asterisk (<abbr class='verplicht' title='verplicht'>*</abbr>).</p>
+            </section>";
 		
-		$str = "<section>
-				<h2>Registreer</h2>
-    			<p>Verplichte velden zijn aangeduid met een asterisk (<abbr class='verplicht' title='verplicht'>*</abbr>).</p>
-  				</section>";
-		
-  		$str .= "<section>
-		
-				  <form id='regForm' name='regForm' method='get' action='reflect_data.php'>
-					<fieldset>
-					  <legend>Uw persoonlijke gegevens</legend>
-					  <div>
-						<label for='vnaam'>Voornaam<abbr class='verplicht' title='verplicht'>*</abbr>:</label>
-						<input type='text' title='vul hier uw voornaam in' placeholder='voornaam'  id='vnaam' name='vnaam'  />
-					  </div>
-					  <div>
-						<label for='fnaam'>Familienaam<abbr class='verplicht' title='verplicht'>*</abbr>:</label>
-						<input type='text' title='vul hier uw familienaam in' placeholder='familienaam' id='fnaam' name='fnaam'  />
-					  </div>
-					  <div>
-						<label for='straat'>Straat:</label>
-						<input type='text' title='uw straat  met huisnummer'  placeholder='straat + huisnummer'  id='straat' name='straat'  />
-					  </div>
-					  <div>
-						<label for='gemeente'>Gemeente:</label>
-						<input type='text' title='de gemeente waar u woont'  placeholder='gemeente' id='gemeente' name='gemeente'  />
-					  </div>
-					  <div>
-						<label for='postnr'>Postnummer<abbr class='verplicht' title='verplicht'>*</abbr>:</label>
-						<input type='text' title='het postnummer van uw gemeente' placeholder='postnummer' id='postnr' name='postnr'  />
-					  </div>
-					  <div>
-						<label for='tel'>Telefoon:</label>
-						<input type='text' title='uw vaste of mobiele telefoon' placeholder='telefoonnummer' id='tel' name='tel'  />
-					  </div>
-					  <div>
-						<label for='geboren'>Geboortedatum<abbr class='verplicht' title='verplicht'>*</abbr>:</label>
-						<input type='text' title='uw geboortedatum in het formaat 1956-12-31' placeholder='geboortedatum'  id='geboren' name='geboren'  />
-					  </div>
-					  <div>
-						<label>geslacht<abbr class='verplicht' title='verplicht'>*</abbr>:</label>
-						<label class='labelRadio' for='man'>
-						  <input type='radio'  title='uw sexe' id='man'  name='sexe' value='m' />
-						  Man </label>
-						<label class='labelRadio' for='vrouw' >
-						  <input type='radio' title='uw sexe' id='vrouw' name='sexe' value='v' />
-						  Vrouw </label>
-					  </div>
-					</fieldset>";
-					
-			$str .= "<fieldset>
-					  <legend>Uw groene keuzes</legend>
-					  <div>
-						<label>uw ruimte  is een <abbr class='verplicht' title='verplicht'>*</abbr>:</label>
-						<div class='controlbox'>
-						<label class='labelCheckbox' for='ruimte_bedrijf'>
-						  <input type='checkbox' title='U heeft een bedrijfsterrein dat u wil beplanten' id='ruimte_bedrijf' name='ruimte[]' value='bedrijf'   />
-						  Bedrijfsterrein </label>
-						<label class='labelCheckbox' for='ruimte_tuin'>
-						  <input type='checkbox'  title='U heeft een tuin aan uw huis' id='ruimte_tuin' name='ruimte[]' value='tuin'  />
-						  Tuin </label>
-						<label class='labelCheckbox' for='ruimte_terras' >
-						  <input type='checkbox' title='U bezit een terras waarop potplanten kunnen pronken' id='ruimte_terras' value='terras' name='ruimte[]' />
-						  Terras </label>
-						<label class='labelCheckbox' for='ruimte_balkon' >
-						  <input type='checkbox' title='U heeft een balkon waarop u enkele potplanten kunt zetten'   id='ruimte_balkon' value='balkon' name='ruimte[]' />
-						  Balkon </label>
-					  </div>
-					    </div>
-					  <div>
-						<label for='agree'>U zoekt vnl</label>";
-			
-			$str .= $soortendropdown;
-					 
-			$str .= "</div></fieldset>";
-			
-			$str .= "<fieldset>
-					  <legend>Aanmelding</legend>
-					  <div>
-						<label for='username'>gebruikersnaam<abbr class='verplicht' title='verplicht'>*</abbr>:
-						
-						</label>
-						<input type='text' title='de gebruikersnaam waarmee u wil aanmelden'   id='username' name='username'  />
-					  </div>
-					  <div>
-						<label for='ww1'>wachtwoord<abbr class='verplicht' title='verplicht'>*</abbr>:</label>
-						<input type='password' title='uw wachtwoord' id='ww1' name='ww1'  />
-					  </div>
-					  <div>
-						<label for='ww2'>herhaal wachtwoord:</label>
-						<input type='password' title='herhaal uw wachtwoord'  id='ww2' name='ww2'  />
-					  </div>
-					</fieldset>";
-			
-			$str .= "<fieldset>
-					  <legend>Promoties</legend>
-					  <div>
-						<label for='promos'>hou mij op de hoogte van promoties via email</label>
-						<input type='checkbox' id='promos' title='ik wens op de hoogte gehouden te worden van uw promoties' name='promos' />
-					  	<input  type='email' title='mijn emailadres'   id='email' name='email'  disabled='disabled' />
-					  </div>
-					</fieldset>";
-					
-			$str .= "<fieldset>
-					  <legend>Bevestig</legend>
-					  <div>
-						<input class='submit' type='submit' value='Bevestig'/>
-						<input class='cancel' type='reset' value='Annuleer'/>
-					  </div>
-					</fieldset>
-				  </form>
-				  ";
-		
+        $str .= "<section>
+            <form id='regForm' name='regForm' method='get' action='reflect_data.php'>
+                <fieldset>
+                    <legend>Uw persoonlijke gegevens</legend>
+                    <div>
+                        <label for='vnaam'>Voornaam<abbr class='verplicht' title='verplicht'>*</abbr>:</label>
+                        <input type='text' title='vul hier uw voornaam in' placeholder='voornaam'  id='vnaam' name='vnaam'  />
+                    </div>
+                    <div>
+                        <label for='fnaam'>Familienaam<abbr class='verplicht' title='verplicht'>*</abbr>:</label>
+                        <input type='text' title='vul hier uw familienaam in' placeholder='familienaam' id='fnaam' name='fnaam'  />
+                    </div>
+                    <div>
+                        <label for='straat'>Straat:</label>
+                        <input type='text' title='uw straat  met huisnummer'  placeholder='straat + huisnummer'  id='straat' name='straat'  />
+                    </div>
+                    <div>
+                        <label for='gemeente'>Gemeente:</label>
+                        <input type='text' title='de gemeente waar u woont'  placeholder='gemeente' id='gemeente' name='gemeente'  />
+                    </div>
+                    <div>
+                        <label for='postnr'>Postnummer<abbr class='verplicht' title='verplicht'>*</abbr>:</label>
+                        <input type='text' title='het postnummer van uw gemeente' placeholder='postnummer' id='postnr' name='postnr'  />
+                    </div>
+                    <div>
+                        <label for='tel'>Telefoon:</label>
+                        <input type='text' title='uw vaste of mobiele telefoon' placeholder='telefoonnummer' id='tel' name='tel'  />
+                    </div>
+                    <div>
+                        <label for='geboren'>Geboortedatum<abbr class='verplicht' title='verplicht'>*</abbr>:</label>
+                        <input type='text' title='uw geboortedatum in het formaat 1956-12-31' placeholder='geboortedatum'  id='geboren' name='geboren'  />
+                    </div>
+                    <div>
+                        <label>geslacht<abbr class='verplicht' title='verplicht'>*</abbr>:</label>
+                        <label class='labelRadio' for='man'>
+                            <input type='radio'  title='uw sexe' id='man'  name='sexe' value='m' />Man
+                        </label>
+                        <label class='labelRadio' for='vrouw' >
+                            <input type='radio' title='uw sexe' id='vrouw' name='sexe' value='v' />Vrouw
+                        </label>
+                    </div>
+                </fieldset>";
+
+        $str .= "<fieldset>
+            <legend>Uw groene keuzes</legend>
+            <div>
+                <label>uw ruimte  is een <abbr class='verplicht' title='verplicht'>*</abbr>:</label>
+                <div class='controlbox'>
+                    <label class='labelCheckbox' for='ruimte_bedrijf'>
+                        <input type='checkbox' title='U heeft een bedrijfsterrein dat u wil beplanten' id='ruimte_bedrijf' name='ruimte[]' value='bedrijf' />Bedrijfsterrein
+                    </label>
+                    <label class='labelCheckbox' for='ruimte_tuin'>
+                        <input type='checkbox'  title='U heeft een tuin aan uw huis' id='ruimte_tuin' name='ruimte[]' value='tuin' />Tuin
+                    </label>
+                    <label class='labelCheckbox' for='ruimte_terras' >
+                        <input type='checkbox' title='U bezit een terras waarop potplanten kunnen pronken' id='ruimte_terras' value='terras' name='ruimte[]' />Terras 
+                    </label>
+                    <label class='labelCheckbox' for='ruimte_balkon' >
+                        <input type='checkbox' title='U heeft een balkon waarop u enkele potplanten kunt zetten'   id='ruimte_balkon' value='balkon' name='ruimte[]' />
+                        Balkon
+                    </label>
+                </div>
+            </div>
+            <div>
+                <label for='agree'>U zoekt vnl</label>";
+
+            $str .= $soortendropdown;
+
+        $str .= "</div>
+            </fieldset>";
+
+        $str .= "<fieldset>
+            <legend>Aanmelding</legend>
+            <div>
+                <label for='username'>gebruikersnaam<abbr class='verplicht' title='verplicht'>*</abbr>:</label>
+                <input type='text' title='de gebruikersnaam waarmee u wil aanmelden'   id='username' name='username'  />
+            </div>
+            <div>
+                <label for='ww1'>wachtwoord<abbr class='verplicht' title='verplicht'>*</abbr>:</label>
+                <input type='password' title='uw wachtwoord' id='ww1' name='ww1'  />
+            </div>
+            <div>
+                <label for='ww2'>herhaal wachtwoord:</label>
+                <input type='password' title='herhaal uw wachtwoord'  id='ww2' name='ww2'  />
+            </div>
+        </fieldset>";
+
+        $str .= "<fieldset>
+            <legend>Promoties</legend>
+            <div>
+                <label for='promos'>hou mij op de hoogte van promoties via email</label>
+                <input type='checkbox' id='promos' title='ik wens op de hoogte gehouden te worden van uw promoties' name='promos' />
+                <input  type='email' title='mijn emailadres'   id='email' name='email'  disabled='disabled' />
+            </div>
+        </fieldset>";
+
+        $str .= "
+            <fieldset>
+                <legend>Bevestig</legend>
+                <div>
+                    <input class='submit' type='submit' value='Bevestig'/>
+                    <input class='cancel' type='reset' value='Annuleer'/>
+                </div>
+            </fieldset>
+        </form>
+        ";
 		
 	return $str; 
 }
