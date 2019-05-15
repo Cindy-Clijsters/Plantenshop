@@ -216,21 +216,33 @@ table.cursus td,table.cursus th
 
 /******************KEUZES**************************/
 #keuzes{
-	/*section keuzes*/
-	margin:0;
-	padding:0;
-	}
+    /*section keuzes*/
+    margin:0;
+    padding:0;
+}
 
-#keuzes div{ background-color:#F5F5F5; /*lichtgrijs*/}
-#keuzes p{padding: 10px 30px;}
+#keuzes div{
+    background-color:#F5F5F5; /*lichtgrijs*/
+}
+
+#keuzes p {
+    padding: 10px 30px;
+}
+
 /*titels keuzes*/
 #keuzes h3{
-	line-height:1.9em;
-	font-size:1.9em;
-	color:#CCCCCC;
-  	margin:0;
-	padding: 0 30px;
+    line-height:1.9em;
+    font-size:1.9em;
+    color:#CCCCCC;
+    margin:0;
+    padding: 0 30px;
 }
+#keuzes h3.ui-state-default {
+    background-image:none;
+    border:none;
+    border-radius:0
+}
+
 #keuzes h3:first-of-type{background-color:#FF7A0F}/*oranje*/
 #keuzes h3:nth-of-type(2){background-color:#1DB8EF;}/*blauw*/
 #keuzes h3:nth-of-type(3){background-color:#DDDF1B;}/*geel*/

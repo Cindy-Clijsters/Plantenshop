@@ -68,49 +68,49 @@ function getFoutePagina(){
 }
 
 //*************************************************
-function getHome(){
-	//Home pagina
-		$str = "
-		<section>
-		<h2>Onze keuzes</h2>
-    	<p>Als zoon van een Vlaamse boomkweker ben ik in 1931 een kwekerij begonnen, met een oppervlakte van ongeveer 6000 m2. 	In de eerste jaren kweekte ik voornamelijk bomen en struiken en als hobby, vaste planten. In de loop der jaren werd ons assortiment uitgebreid zodat we nu het volledige areaal buitenplanten bezitten. De oppervlakte van de kwekerij is nu ruim 15.000 m2 en alle planten, bestemd voor de verkoop, worden in de pot gekweekt. Het assortiment bestaat uit ca. 4000 soorten  planten, waarop wij trots zijn en durven te beweren dat een dergelijke sortering niet gemakkelijk, waar dan ook, in Europa te vinden zal zijn. 
-		</p>
-  		</section>
-  
-  <!--start keuzes-->
-  <section id='keuzes'>
-    <h3>Een- en tweejarigen</h3>
-	 <div>
-    <p>Een- en tweejarigen kunt u zelf zaaien. Deze planten bloeien vaak meer en langer dan vaste planten en brengen kleur en variatie. Daarnaast kunnen zij goed leemtes vullen in de border. Een- en tweejarigen zijn te krijgen in vele verschillende vormen, van hele kleine tere plantjes tot klimmers die in onafzienbare tijd uw muur of schutting bedekken met een kleurige bloemenpracht. <a href='shop.php?soort_id=3'>Bekijk onze selectie Een- en tweejarigen</a></p>
-  </div>
-  <h3>Kruiden, vaste planten en heide</h3>
-  <div>    
-    <p>De groep vaste planten omvat kruidachtige planten die geen houtige takken vormen. Een groot deel van deze planten sterven in de winter bovengronds af, maar schieten elk jaar terug vanuit een overblijvend wortelstelsel. Een klein deel van de vaste planten zijn groenblijvend en zijn in de winter ook decoratief (een aantal zijn zelfs winterbloeiers). Vaste planten worden in pot gekweekt en kunnen dus het ganse jaar aangeplant worden. Ze staan in serre 5 en 6 alfabetisch gerangschikt.<a href='shop.php?soort_id=8'>kies een vaste plant</a></p>
-  </div>
-   <h3>Bomen en struiken</h3>
-   <div>
-   
-    <p>Van oudsher is dit onze specialiteit. Bij ons vindt u dan ook een uitgelezen selectie van inheemse bomen en struiken ideaal voor alle 'echt' groen beplantingen.<a href='shop.php?soort_id=4'>zoek tussen bomen en struiken</a></p>
-  </div>
-   <h3>Klimplanten en gevelplanten</h3>
-   <div>   
-    <p>Een tuin kan niet zonder verticale accenten. Klimplanten zijn daarvoor de ideale versierders, ter verfraaiing van een muur, prieel of pergola of om een lelijk hekwerk aan het oog te onttrekken. Elke klimplant heeft wel iets aantrekkelijks, een rijke bloei, een mooi blad, opvallende bessen. Kortom in de meeste tuinen is er wel een plaatsje dat door een gepaste klimplant verfraaid kan worden. Bovendien zijn ze ook zeer geschikt voor kleine tuinen en zelfs voor geveltuintjes omdat ze zo weinig ruimte innemen in de grond. <a href='shop.php?soort_id=5'>beklim onze lijst</a></p>
-     </div>
+
+function getHome() {
     
-    <h3>Water- en vijverplanten</h3>
-     <div><p>Waterplanten noemen we vaak vijverplanten, ze zijn een absolute noodzaak om tot een biologisch evenwicht te komen!  Waterplanten zijn dus planten die groeien in of onder het water. Tot deze categorie behoren drijfplanten, onderwaterplanten, moerasplanten en waterlelies. Zuurstofplanten zijn meestal ook onderwaterplanten (er zijn uitzonderingen). Andere buitenbeentjes zijn de (natte) oeverplanten... zij groeien niet graag in of onder het water maar houden vooral van een natte, vochtige bodem en planten we daarom meestal rondom de vijver aan. <a href='shop.php?soort_id=7'>trek uw laarzen aan voor onze keuze waterplanten</a></p>
-  </div>
- </section>
- <!--einde keuzes-->
-  	<section>
-    <h2>Altijd groen</h2>
-    <div class='kol_half'>De 'PlantenShop' in JungleCreek heeft meer dan 100 jaar ervaring in het kweken, verkopen en verhuren van planten, bomen - en bloemen. Zonder planten en bloemen mist uw huis, uw winkel, uw vergadering de zo noodzakelijke sfeervolle uitstraling. Of het nu gaat om uw stand op een vak- of publieksbeurs, een congres, een productpresentatie, een landelijke of regionale dealerbijeenkomst, een symposium, een modeshow of een feest voor uw personeel, groene planten en kleurrijke bloemen creëren een sfeervolle ambiance. Onze kleurenbrochure geeft een goede indruk van ons leveringsprogramma. Vanzelfsprekend adviseren wij U graag bij uw keuze.
-    </div>
-    <div class='kol_half'>Bijzonder fraai zijn onze moderne aluminium cilinderbakken met planten. Ook leverbaar zijn planten in rieten manden of terracotta potten, pergola's, houten scheidingswandjes, bruggetjes, banken etc. Bovendien kan Elka Plant uw bloemperken en tuinpartijen completeren met aantrekkelijke waterpartijen zoals kleine en grotere watervallen en vijvers in verschillende vormen en afmetingen, met daarin exclusief fonteinen en waterzuilen, compleet met onderwater verlichting. Zeer spectaculair is de speciale waterstraal, die vele meters overbrugt en - d.m.v. elektronische programmering - lange en korte 'stukjes' waterstraal kan spuiten. Neemt u contact met ons op, zodat wij gezamenlijk uw project kunnen bespreken. Het resultaat zal een perfecte presentatie zijn.
-    </div>
-  </section>";
+    //Home pagina
+    $str = "
+    <section>
+        <h2>Onze keuzes</h2>
+        <p>Als zoon van een Vlaamse boomkweker ben ik in 1931 een kwekerij begonnen, met een oppervlakte van ongeveer 6000 m2. 	In de eerste jaren kweekte ik voornamelijk bomen en struiken en als hobby, vaste planten. In de loop der jaren werd ons assortiment uitgebreid zodat we nu het volledige areaal buitenplanten bezitten. De oppervlakte van de kwekerij is nu ruim 15.000 m2 en alle planten, bestemd voor de verkoop, worden in de pot gekweekt. Het assortiment bestaat uit ca. 4000 soorten  planten, waarop wij trots zijn en durven te beweren dat een dergelijke sortering niet gemakkelijk, waar dan ook, in Europa te vinden zal zijn.</p>
+    </section>
+  
+    <!--start keuzes-->
+    <section id='keuzes'>
+        <h3>Een- en tweejarigen</h3>
+        <div>
+            <p>Een- en tweejarigen kunt u zelf zaaien. Deze planten bloeien vaak meer en langer dan vaste planten en brengen kleur en variatie. Daarnaast kunnen zij goed leemtes vullen in de border. Een- en tweejarigen zijn te krijgen in vele verschillende vormen, van hele kleine tere plantjes tot klimmers die in onafzienbare tijd uw muur of schutting bedekken met een kleurige bloemenpracht. <a href='shop.php?soort_id=3'>Bekijk onze selectie Een- en tweejarigen</a></p>
+        </div>
+        <h3>Kruiden, vaste planten en heide</h3>
+        <div>    
+            <p>De groep vaste planten omvat kruidachtige planten die geen houtige takken vormen. Een groot deel van deze planten sterven in de winter bovengronds af, maar schieten elk jaar terug vanuit een overblijvend wortelstelsel. Een klein deel van de vaste planten zijn groenblijvend en zijn in de winter ook decoratief (een aantal zijn zelfs winterbloeiers). Vaste planten worden in pot gekweekt en kunnen dus het ganse jaar aangeplant worden. Ze staan in serre 5 en 6 alfabetisch gerangschikt.<a href='shop.php?soort_id=8'>kies een vaste plant</a></p>
+        </div>
+        <h3>Bomen en struiken</h3>
+        <div>
+            <p>Van oudsher is dit onze specialiteit. Bij ons vindt u dan ook een uitgelezen selectie van inheemse bomen en struiken ideaal voor alle 'echt' groen beplantingen.<a href='shop.php?soort_id=4'>zoek tussen bomen en struiken</a></p>
+        </div>
+        <h3>Klimplanten en gevelplanten</h3>
+        <div>   
+            <p>Een tuin kan niet zonder verticale accenten. Klimplanten zijn daarvoor de ideale versierders, ter verfraaiing van een muur, prieel of pergola of om een lelijk hekwerk aan het oog te onttrekken. Elke klimplant heeft wel iets aantrekkelijks, een rijke bloei, een mooi blad, opvallende bessen. Kortom in de meeste tuinen is er wel een plaatsje dat door een gepaste klimplant verfraaid kan worden. Bovendien zijn ze ook zeer geschikt voor kleine tuinen en zelfs voor geveltuintjes omdat ze zo weinig ruimte innemen in de grond. <a href='shop.php?soort_id=5'>beklim onze lijst</a></p>
+        </div>
+        <h3>Water- en vijverplanten</h3>
+        <div>
+            <p>Waterplanten noemen we vaak vijverplanten, ze zijn een absolute noodzaak om tot een biologisch evenwicht te komen!  Waterplanten zijn dus planten die groeien in of onder het water. Tot deze categorie behoren drijfplanten, onderwaterplanten, moerasplanten en waterlelies. Zuurstofplanten zijn meestal ook onderwaterplanten (er zijn uitzonderingen). Andere buitenbeentjes zijn de (natte) oeverplanten... zij groeien niet graag in of onder het water maar houden vooral van een natte, vochtige bodem en planten we daarom meestal rondom de vijver aan. <a href='shop.php?soort_id=7'>trek uw laarzen aan voor onze keuze waterplanten</a></p>
+            <p>Waterplanten noemen we vaak vijverplanten, ze zijn een absolute noodzaak om tot een biologisch evenwicht te komen!  Waterplanten zijn dus planten die groeien in of onder het water. Tot deze categorie behoren drijfplanten, onderwaterplanten, moerasplanten en waterlelies. Zuurstofplanten zijn meestal ook onderwaterplanten (er zijn uitzonderingen). Andere buitenbeentjes zijn de (natte) oeverplanten... zij groeien niet graag in of onder het water maar houden vooral van een natte, vochtige bodem en planten we daarom meestal rondom de vijver aan. <a href='shop.php?soort_id=7'>trek uw laarzen aan voor onze keuze waterplanten</a></p>
+        </div>
+    </section>
+    <!--einde keuzes-->
+
+    <section>
+        <h2>Altijd groen</h2>
+        <div class='kol_half'>De 'PlantenShop' in JungleCreek heeft meer dan 100 jaar ervaring in het kweken, verkopen en verhuren van planten, bomen - en bloemen. Zonder planten en bloemen mist uw huis, uw winkel, uw vergadering de zo noodzakelijke sfeervolle uitstraling. Of het nu gaat om uw stand op een vak- of publieksbeurs, een congres, een productpresentatie, een landelijke of regionale dealerbijeenkomst, een symposium, een modeshow of een feest voor uw personeel, groene planten en kleurrijke bloemen creëren een sfeervolle ambiance. Onze kleurenbrochure geeft een goede indruk van ons leveringsprogramma. Vanzelfsprekend adviseren wij U graag bij uw keuze.</div>
+        <div class='kol_half'>Bijzonder fraai zijn onze moderne aluminium cilinderbakken met planten. Ook leverbaar zijn planten in rieten manden of terracotta potten, pergola's, houten scheidingswandjes, bruggetjes, banken etc. Bovendien kan Elka Plant uw bloemperken en tuinpartijen completeren met aantrekkelijke waterpartijen zoals kleine en grotere watervallen en vijvers in verschillende vormen en afmetingen, met daarin exclusief fonteinen en waterzuilen, compleet met onderwater verlichting. Zeer spectaculair is de speciale waterstraal, die vele meters overbrugt en - d.m.v. elektronische programmering - lange en korte 'stukjes' waterstraal kan spuiten. Neemt u contact met ons op, zodat wij gezamenlijk uw project kunnen bespreken. Het resultaat zal een perfecte presentatie zijn.</div>
+    </section>";
 		
-	return $str; 
+    return $str; 
 }
 
 //*************************************************

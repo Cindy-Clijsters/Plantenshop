@@ -102,7 +102,8 @@ if(isset($_GET['page'])){
     $tpl['body_id'] = "home";	
     
     //content
-    $tpl['rechts']  = getHome();
+    $tpl['rechts']        = getHome();
+    $tpl['paginaScripts'] = getScriptElements("js/home.js"); 
 		
 }
 
