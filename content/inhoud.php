@@ -484,60 +484,76 @@ function getRegistreer(){
 }
 
 //*************************************************
-function getVerzorging(){
-	//Verzorging pagina
-		$str = "<section>
-				<h2>Vaste planten</h2>
-				<p>Een groot voordeel van vaste planten en kruiden is dat ze weinig onderhoud vragen. Zeker als u voldoende verzorgingsmaatregelen treft.<br />
-				Een beginnersfout is vaak om eerst de planten te kiezen, en zich dan pas af te vragen hoe de grond in de tuin is. Hoewel de grondsoort een vast gegeven is, kun je die natuurlijk wel verbeteren. Laat de aanwezige grond altijd het uitgangspunt zijn bij de plantkeuze. Alle planten groeien het beste en bloeien het mooist als de grond voldoende lucht bevat en vocht kan vasthouden. Anders gezegd: als de bodem goed van structuur is.</p>
-				</section>";
+function getVerzorging() {
+    
+    // Verzorging pagina
+    $str = "<section>
+                <h2>Vaste planten</h2>
+		<p>Een groot voordeel van vaste planten en kruiden is dat ze weinig onderhoud vragen. Zeker als u voldoende verzorgingsmaatregelen treft.<br />
+                Een beginnersfout is vaak om eerst de planten te kiezen, en zich dan pas af te vragen hoe de grond in de tuin is. Hoewel de grondsoort een vast gegeven is, kun je die natuurlijk wel verbeteren. Laat de aanwezige grond altijd het uitgangspunt zijn bij de plantkeuze. Alle planten groeien het beste en bloeien het mooist als de grond voldoende lucht bevat en vocht kan vasthouden. Anders gezegd: als de bodem goed van structuur is.</p>
+            </section>";
 				
-  		$str .= "<section>
-				
-				<!--start div verzorging-->
-				<div id='verzorging'>
-				<div id='bodem'>
-				<h3>Zorg voor een vochtige wortelkluit</h3>
-				<p> Vaste planten worden tegenwoordig afgeleverd in potten. Ze zien er misschien niet altijd even florissant uit, maar de kans dat de planten in de tuin onmiddellijk doorgroeien is bijna 100%. Een ander voordeel is dat in feite het hele jaar door geplant kan worden. Maar de voorkeur van de vakman gaat uit naar planten in het najaar. De ervaring leert echter, dat tuinliefhebbers vrijwel steeds het nieuwe groeiseizoen afwachten en dus gaan planten in april en mei.</p>
-				<p>Het voordeel van planten in het najaar is groot: de planten groeien voor de winter nog vast en zijn in de volgende zomer beter bestand tegen droogteperioden. En van allerlei vroegbloeiende vaste planten heb je in het eerste het beste voorjaar al direct plezier! Uiteraard geldt hierop een uitzondering, namelijk de soorten die niet echt winterhard zijn. Zorg ervoor dat bij het planten de wortelkluit van te voren goed vochtig is gemaakt.</p>
-				<h3>Compost zorgt voor goede lucht</h3>
-				<p> Zandgrond kan verbeterd worden door compost door de bovenste grondlaag te mengen. De grond wordt zo meer samenhangend en kan meer water opnemen. Kleigrond wordt juist losser van structuur als er compost wordt toegevoegd en zal daardoor luchtiger worden. Omdat wortels niet alleen voedsel opnemen maar ook ademhalen, is de luchtigheid van de grond heel belangrijk voor het welzijn van de planten. Door wat extra koemest door de compost te mengen, zijn de planten verzekerd van voldoende voeding.</p>
-				<h3>Een steuntje op z'n tijd</h3>
-				<p>Alles staat of valt dus met een goede structuur van de grond, de juiste standplaats en de geschikte onderlinge afstand van de planten. Maar er zijn ook nogal wat planten die niet zo erg stevig zijn en daarom steun nodig hebben. Het meest natuurlijk is om daarvoor rijshout te gebruiken. Rijshout zijn vertakte twijgen van bijvoorbeeld iep of els die tussen de planten worden gezet. Door de einden naar binnen om te buigen ontstaat een goede steun. Ook zijn allerlei kant-en-klare steunen te koop die goed voldoen.</p>
-				<p> Snijd in het najaar niet van alle vaste planten de oude stengels af en maak de tuin niet helemaal bladvrij. De bladeren verteren ook ter plekke wel en beschermen bovendien de planten. In het najaar wegharken, naar de composthoop brengen en in het voorjaar weer terug, is zinloos: pas in het voorjaar wegharken is een betere oplossing.</p>
-				</div>
-				<div id='vermeerderen'>
-				<p>Vaste planten zijn kruidachtige planten die in de zomer boven de grond een bladrozet en onder de grond een wortelgestel vormen. In de winter sterft het bovengrondse deel af om in het voorjaar weer uit te lopen. Na een jaar of 3 is een vaste plant tot een volwassen afmeting gekomen. Na die tijd zal het hart van de plant verhouten en afsterven. De buitenkant van de plant breidt zich verder uit met jonge uitlopers. </p>
-				<p>Als een vaste plant voor het eerste jaar in de tuin staat zal hij minder hoog worden als dezelfde plant die al enkele jaren op dezelfde plaats staat. Een plant die nog niet zolang in de tuin geplant is zal, omdat deze minder hoog wordt ook minder slappe stengels hebben en dus minder snel omwaaien. Al deze gegevens zorgen ervoor dat bij het beplanten van een border de vaste planten na ongeveer 3 tot 5 jaar aan verjonging toe zijn.</p>
-				<h3>Verjongen</h3>
-				<p>Dit verjongen wordt gedaan door middel van scheuren. Om vaste planten te scheuren moet de plant met de gehele kluit uit de aarde geschept worden. Nadat de aarde van de kluit is afgeschut is goed te zien hoe de kluit eruit ziet. De buitenste jonge delen kunnen van de kluit afgescheurd worden en opnieuw in de tuin geplant. Bij oude planten kan het zijn dat de kluit al dusdanig verhout is dat deze alleen met een spade doorgestoken kan worden. De nieuwe jonge plantjes zullen weer rijk bloeien in het eerstvolgende seizoen.</p>
-				<h3>Scheuren</h3>
-				<p>Het leuke van het scheuren van vaste planten is dat er van één moederplant soms wel 25 nieuwe planten gedeeld kunnen worden. Negen van de tien vaste planten kunnen op deze manier vermeerderd worden. Deze manier van vermeerderen is ook ideaal om het assortiment in eigen tuin op een betaalbare manier aan te vullen. Planten door scheuren vermeerderd zijn soortecht. Dat wil zeggen, ze vertonen dezelfde eigenschappen als de moederplant. Op ruilbeurzen, via vrienden en kennissen kunnen op deze manier plantensoorten uitgewisseld en aangevuld worden.</p>
-				<h3>Zaaien</h3>
-				<p>Veel vaste planten kunnen door zaaien vermeerderd worden. Bij zaaien is echter de kans groot dat de nieuwe zaailing andere eigenschappen heeft dan de moederplant. Als er een blauwkleurige plant gezaaid is kan het gebeuren dat er een witte of roze plant uit het zaad opgroeit. Kwekers maken dankbaar gebruik van dit gegeven. Op deze manier ontstaan er steeds weer nieuwe soorten, die door kwekers, na getest te zijn op de eigenschappen, als nieuwe soort op de markt gebracht worden.</p>
-				</div>
-				<div id='licht'>
-				<p>In elke tuin komt wel een plek met schaduw voor. Een schaduwtuin kan met verschillende bladvormen en bladkleuren een heel evenwichtige en rustgevende uitstraling hebben. Schaduwplanten bloeien over het algemeen in het voorjaar. Logisch, want dan is er nog voldoende licht omdat de meeste bomen en struiken dan nog kaal zijn. Gelukkig zijn er ook planten die later in het seizoen bloeien; een goed voorbeeld is de Hosta, een plant die flink wat schaduw kan verdragen en in de zomer bloeit.</p>
-				<p> Wilt u schaduwplanten aanschaffen, kijk dan op het plantenetiket in de pot naar het symbool met een halfzwart zonnetje (4 uur zon). Planten met geheel zwart gemaakt zonnetje hebben zelfs aan 2 uur zon per dag genoeg.</p>
-				<h3> Voorjaarsbloeiers in de schaduw</h3>
-				<p> De kerstroos (Helleborus) begint al in februari te bloeien. De meeste soorten hebben prachtig blad dat ook in de zomer veel sierwaarde heeft. In maart volgt het leverbloempje (Hepatica) gevolgd door longkruid (Pulmonaria) en maagdenpalm (Vinca). Kaukasische vergeet-mij-niet (Brunnera) is in de schaduw een heel dankbare plant. Ook sleutelbloemensoorten (Primula) kunnen flink wat schaduw verdragen en bloeien tot in mei. Ook treurend hartje (Dicentra) en dovenetel doen het goed in de schaduw.</p>
-				<p> Tip: Veel vaste planten bloeien met witte bloemen. Wit valt op plekken met veel schaduw beter op dan bijvoorbeeld blauw. Ze kunnen dan ook een schaduwplek doen 'oplichten'.</p>
-				<h3> Zomerbloeiers in de schaduw</h3>
-				<p> Veel ooievaarsbeksoorten (Geranium) kunnen flink wat schaduw verdragen. Heel bekend zij de roze bloeiende Geranium endressii en de Geranium macrorrhizum die in een iet te koude winter zelfs zijn groene blad houdt. Vrouwenmantel (Alchemilla mollis) is een van de makkelijkste vaste planten en kan zowel in de zon als in de schaduw staan. Ruit (Thalictrum) is een decoratieve, ijle vaste plant die flink hoog wordt. </p>
-				<p> Tip: Ooievaarsbeksoorten, Kaukasische vergeet-mij-niet (Brunnera) en vrouwenmantel gaan vaak weer opnieuw bloeien en krijgen nieuw fris blad als u ze na de bloei flink terugknipt.</p>
-				<h3> Nazomerbloeiers in de schaduw</h3>
-				<p> Schildpadbloem (Chelone obliqua) is een stevige vaste plant die niet snel omvalt. De zilverkaars (Cimicifuga) wordt flink hoog en valt in de nazomer met zijn witte bloemen goed op. De blauwe monnikskap (Aconitum carmichaellii) bloeit soms nog in oktober en is ook nog eens een prachtige snijbloem. </p>
-				<p> Tip: Er zijn ook vaste planten met bont of geelachtig blad die een border een stuk levendiger kunnen maken. Vooral hosta's hebben een heel mooie tekening. Let bij TuinTotaal eens op vaste planten met een afwijkende bladkleur. Op het kaartje in de pot staat altijd of ze met zon of met schaduw genoegen nemen.</p>
-				</div>
-				<div id='waterplanten'>
-				<p> Om de waterplanten in de vijver optimaal te laten groeien en bloeien is het raadzaam om een aantal keren per jaar ( bijvoorbeeld 4x ) het water te ( laten ) testen. Water bevat een aantal belangrijke waardes voor de planten in de vijver.</p>
-				<p>De GH waarde is de hardheid van het water, deze is zeer belangrijk voor de normale planten zoals: zuurstofplanten, lelies, waterplanten en moerasplanten. De optimale waarde ligt tussen de 8 en 12 graden. Wanneer deze waarde te laag is ( lager als 8 ) zullen de planten niet optimaal groeien en kunnen de zuurstofplanten zelfs verslijmen ! De GH waarde kunt u gemakkelijk verhogen ( bijmesten ) met Maerl of GH +. Wanneer deze waarde hoger is als 12 bevat het water voldoende voeding en hoeft u niet bij te mesten.</p>
-				<p>De KH waarde is de carbonaathardheid van het water. Dit is een belangrijke waarde voor zuurstofplanten. De KH is tevens een buffer voor de PH. Een goede KH waarde zorgt voor een stabiele PH waarde. De optimale waarde zit tussen de 5 en 11. Wanneer deze waarde te laag is,zullen de zuurstofplanten niet optimaal groeien of zelfs verslijmen .De KH waarde kunt u gemakkelijk verhogen met KH +.</p>
-				</div>
-				
-				</div>
-				<!--einde verzorging-->
-				</section>";
+    $str .= "<section>
+        
+                <p><label><input type='checkbox' id='toonWaterplanten' /> info inclusief waterplanten</label></p><br>
+                
+                <p>Soms is goede verzorging onvoldoende: een aantal ziektes belagen onze tuinplanten.<a href='#' id='toonZiektes'> Meer weten over ziektes?</a></p><br>
+                
+                <!--start div verzorging-->
+                
+                <div id='verzorging'>
+                    <ul>
+                        <li><a href='#bodem'>Bodem en voedsel</a></li>
+                        <li><a href='#vermeerderen'>Vermeerderen</a></li>
+                        <li><a href='#licht'>Zon of schaduw</a></li>
+                        <li><a href='#waterplanten'>Waterplanten</a></li>
+                    </ul>
+
+                    <div id='bodem'>
+                        <h3>Zorg voor een vochtige wortelkluit</h3>
+                        <p> Vaste planten worden tegenwoordig afgeleverd in potten. Ze zien er misschien niet altijd even florissant uit, maar de kans dat de planten in de tuin onmiddellijk doorgroeien is bijna 100%. Een ander voordeel is dat in feite het hele jaar door geplant kan worden. Maar de voorkeur van de vakman gaat uit naar planten in het najaar. De ervaring leert echter, dat tuinliefhebbers vrijwel steeds het nieuwe groeiseizoen afwachten en dus gaan planten in april en mei.</p>
+                        <p>Het voordeel van planten in het najaar is groot: de planten groeien voor de winter nog vast en zijn in de volgende zomer beter bestand tegen droogteperioden. En van allerlei vroegbloeiende vaste planten heb je in het eerste het beste voorjaar al direct plezier! Uiteraard geldt hierop een uitzondering, namelijk de soorten die niet echt winterhard zijn. Zorg ervoor dat bij het planten de wortelkluit van te voren goed vochtig is gemaakt.</p>
+                        <h3>Compost zorgt voor goede lucht</h3>
+                        <p> Zandgrond kan verbeterd worden door compost door de bovenste grondlaag te mengen. De grond wordt zo meer samenhangend en kan meer water opnemen. Kleigrond wordt juist losser van structuur als er compost wordt toegevoegd en zal daardoor luchtiger worden. Omdat wortels niet alleen voedsel opnemen maar ook ademhalen, is de luchtigheid van de grond heel belangrijk voor het welzijn van de planten. Door wat extra koemest door de compost te mengen, zijn de planten verzekerd van voldoende voeding.</p>
+                        <h3>Een steuntje op z'n tijd</h3>
+                        <p>Alles staat of valt dus met een goede structuur van de grond, de juiste standplaats en de geschikte onderlinge afstand van de planten. Maar er zijn ook nogal wat planten die niet zo erg stevig zijn en daarom steun nodig hebben. Het meest natuurlijk is om daarvoor rijshout te gebruiken. Rijshout zijn vertakte twijgen van bijvoorbeeld iep of els die tussen de planten worden gezet. Door de einden naar binnen om te buigen ontstaat een goede steun. Ook zijn allerlei kant-en-klare steunen te koop die goed voldoen.</p>
+                        <p> Snijd in het najaar niet van alle vaste planten de oude stengels af en maak de tuin niet helemaal bladvrij. De bladeren verteren ook ter plekke wel en beschermen bovendien de planten. In het najaar wegharken, naar de composthoop brengen en in het voorjaar weer terug, is zinloos: pas in het voorjaar wegharken is een betere oplossing.</p>
+                    </div>
+
+                    <div id='vermeerderen'>
+                        <p>Vaste planten zijn kruidachtige planten die in de zomer boven de grond een bladrozet en onder de grond een wortelgestel vormen. In de winter sterft het bovengrondse deel af om in het voorjaar weer uit te lopen. Na een jaar of 3 is een vaste plant tot een volwassen afmeting gekomen. Na die tijd zal het hart van de plant verhouten en afsterven. De buitenkant van de plant breidt zich verder uit met jonge uitlopers. </p>
+                        <p>Als een vaste plant voor het eerste jaar in de tuin staat zal hij minder hoog worden als dezelfde plant die al enkele jaren op dezelfde plaats staat. Een plant die nog niet zolang in de tuin geplant is zal, omdat deze minder hoog wordt ook minder slappe stengels hebben en dus minder snel omwaaien. Al deze gegevens zorgen ervoor dat bij het beplanten van een border de vaste planten na ongeveer 3 tot 5 jaar aan verjonging toe zijn.</p>
+                        <h3>Verjongen</h3>
+                        <p>Dit verjongen wordt gedaan door middel van scheuren. Om vaste planten te scheuren moet de plant met de gehele kluit uit de aarde geschept worden. Nadat de aarde van de kluit is afgeschut is goed te zien hoe de kluit eruit ziet. De buitenste jonge delen kunnen van de kluit afgescheurd worden en opnieuw in de tuin geplant. Bij oude planten kan het zijn dat de kluit al dusdanig verhout is dat deze alleen met een spade doorgestoken kan worden. De nieuwe jonge plantjes zullen weer rijk bloeien in het eerstvolgende seizoen.</p>
+                        <h3>Scheuren</h3>
+                        <p>Het leuke van het scheuren van vaste planten is dat er van één moederplant soms wel 25 nieuwe planten gedeeld kunnen worden. Negen van de tien vaste planten kunnen op deze manier vermeerderd worden. Deze manier van vermeerderen is ook ideaal om het assortiment in eigen tuin op een betaalbare manier aan te vullen. Planten door scheuren vermeerderd zijn soortecht. Dat wil zeggen, ze vertonen dezelfde eigenschappen als de moederplant. Op ruilbeurzen, via vrienden en kennissen kunnen op deze manier plantensoorten uitgewisseld en aangevuld worden.</p>
+                        <h3>Zaaien</h3>
+                        <p>Veel vaste planten kunnen door zaaien vermeerderd worden. Bij zaaien is echter de kans groot dat de nieuwe zaailing andere eigenschappen heeft dan de moederplant. Als er een blauwkleurige plant gezaaid is kan het gebeuren dat er een witte of roze plant uit het zaad opgroeit. Kwekers maken dankbaar gebruik van dit gegeven. Op deze manier ontstaan er steeds weer nieuwe soorten, die door kwekers, na getest te zijn op de eigenschappen, als nieuwe soort op de markt gebracht worden.</p>
+                    </div>
+                    
+                    <div id='licht'>
+                        <p>In elke tuin komt wel een plek met schaduw voor. Een schaduwtuin kan met verschillende bladvormen en bladkleuren een heel evenwichtige en rustgevende uitstraling hebben. Schaduwplanten bloeien over het algemeen in het voorjaar. Logisch, want dan is er nog voldoende licht omdat de meeste bomen en struiken dan nog kaal zijn. Gelukkig zijn er ook planten die later in het seizoen bloeien; een goed voorbeeld is de Hosta, een plant die flink wat schaduw kan verdragen en in de zomer bloeit.</p>
+                        <p> Wilt u schaduwplanten aanschaffen, kijk dan op het plantenetiket in de pot naar het symbool met een halfzwart zonnetje (4 uur zon). Planten met geheel zwart gemaakt zonnetje hebben zelfs aan 2 uur zon per dag genoeg.</p>
+                        <h3> Voorjaarsbloeiers in de schaduw</h3>
+                        <p> De kerstroos (Helleborus) begint al in februari te bloeien. De meeste soorten hebben prachtig blad dat ook in de zomer veel sierwaarde heeft. In maart volgt het leverbloempje (Hepatica) gevolgd door longkruid (Pulmonaria) en maagdenpalm (Vinca). Kaukasische vergeet-mij-niet (Brunnera) is in de schaduw een heel dankbare plant. Ook sleutelbloemensoorten (Primula) kunnen flink wat schaduw verdragen en bloeien tot in mei. Ook treurend hartje (Dicentra) en dovenetel doen het goed in de schaduw.</p>
+                        <p> Tip: Veel vaste planten bloeien met witte bloemen. Wit valt op plekken met veel schaduw beter op dan bijvoorbeeld blauw. Ze kunnen dan ook een schaduwplek doen 'oplichten'.</p>
+                        <h3> Zomerbloeiers in de schaduw</h3>
+                        <p> Veel ooievaarsbeksoorten (Geranium) kunnen flink wat schaduw verdragen. Heel bekend zij de roze bloeiende Geranium endressii en de Geranium macrorrhizum die in een iet te koude winter zelfs zijn groene blad houdt. Vrouwenmantel (Alchemilla mollis) is een van de makkelijkste vaste planten en kan zowel in de zon als in de schaduw staan. Ruit (Thalictrum) is een decoratieve, ijle vaste plant die flink hoog wordt. </p>
+                        <p> Tip: Ooievaarsbeksoorten, Kaukasische vergeet-mij-niet (Brunnera) en vrouwenmantel gaan vaak weer opnieuw bloeien en krijgen nieuw fris blad als u ze na de bloei flink terugknipt.</p>
+                        <h3> Nazomerbloeiers in de schaduw</h3>
+                        <p> Schildpadbloem (Chelone obliqua) is een stevige vaste plant die niet snel omvalt. De zilverkaars (Cimicifuga) wordt flink hoog en valt in de nazomer met zijn witte bloemen goed op. De blauwe monnikskap (Aconitum carmichaellii) bloeit soms nog in oktober en is ook nog eens een prachtige snijbloem. </p>
+                        <p> Tip: Er zijn ook vaste planten met bont of geelachtig blad die een border een stuk levendiger kunnen maken. Vooral hosta's hebben een heel mooie tekening. Let bij TuinTotaal eens op vaste planten met een afwijkende bladkleur. Op het kaartje in de pot staat altijd of ze met zon of met schaduw genoegen nemen.</p>
+                    </div>
+                    
+                    <div id='waterplanten'>
+                        <p> Om de waterplanten in de vijver optimaal te laten groeien en bloeien is het raadzaam om een aantal keren per jaar ( bijvoorbeeld 4x ) het water te ( laten ) testen. Water bevat een aantal belangrijke waardes voor de planten in de vijver.</p>
+                        <p>De GH waarde is de hardheid van het water, deze is zeer belangrijk voor de normale planten zoals: zuurstofplanten, lelies, waterplanten en moerasplanten. De optimale waarde ligt tussen de 8 en 12 graden. Wanneer deze waarde te laag is ( lager als 8 ) zullen de planten niet optimaal groeien en kunnen de zuurstofplanten zelfs verslijmen ! De GH waarde kunt u gemakkelijk verhogen ( bijmesten ) met Maerl of GH +. Wanneer deze waarde hoger is als 12 bevat het water voldoende voeding en hoeft u niet bij te mesten.</p>
+                        <p>De KH waarde is de carbonaathardheid van het water. Dit is een belangrijke waarde voor zuurstofplanten. De KH is tevens een buffer voor de PH. Een goede KH waarde zorgt voor een stabiele PH waarde. De optimale waarde zit tussen de 5 en 11. Wanneer deze waarde te laag is,zullen de zuurstofplanten niet optimaal groeien of zelfs verslijmen .De KH waarde kunt u gemakkelijk verhogen met KH +.</p>
+                    </div>
+
+                </div>
+                <!--einde verzorging-->
+            </section>";
 	
 	return $str; 
 }

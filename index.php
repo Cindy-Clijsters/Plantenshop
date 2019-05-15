@@ -3,7 +3,6 @@ header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
 header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
 
 /* algemene controller */
-
 //error_reporting(E_ALL); //commentarieer
 @define('__ROOT__', dirname(dirname(__FILE__)."/mvc_2013")); 
 
@@ -13,9 +12,8 @@ require_once(__ROOT__."/man/templateManager.php");
 require_once(__ROOT__."/content/inhoud.php");
 //require_once "content/dyn_elementen.php";
 
-
 //default waarden
-$tpl['title']               = "de Plantenshop, een vdab jQuery tutorial"; 		// title in head
+$tpl['title']               = "de Plantenshop, een vdab jQuery tutorial"; // title in head
 $tpl['body_id']             = "";		// id van body tag
 $tpl['links']               = getMenu();// inhoud linkerkolom
 $tpl['rechts']              = "";		// inhoud rechterkolom
@@ -32,11 +30,8 @@ if(isset($_GET['page'])){
 
     switch ($page) {	
         case "about":
-            /*** About pagina ***/
-            $tpl['title']   = "de Plantenshop: wie zijn we en wat doen we?"; 		
-            $tpl['body_id'] = "about";					
-            
-            //content
+            $tpl['title']           = "de Plantenshop: wie zijn we en wat doen we?"; 		
+            $tpl['body_id']         = "about";					
             $tpl['rechts']          = getAbout();
             $tpl['paginaScripts']   = getScriptElements("js/about.js");
 
@@ -62,11 +57,10 @@ if(isset($_GET['page'])){
             break;
 
         case "zorg":
-            /*** Verzorging pagina ***/
-            $tpl['title']   = "de Plantenshop: welke zorg moet je je planten geven?"; 		
-            $tpl['body_id'] = "zorg";					
-            //content
-            $tpl['rechts']  = getVerzorging();
+            $tpl['title']           = "de Plantenshop: welke zorg moet je je planten geven?"; 		
+            $tpl['body_id']         = "zorg";					
+            $tpl['rechts']          = getVerzorging();
+            $tpl['paginaScripts']   = getScriptElements("js/zorg.js");
 
             break;		
 
@@ -98,12 +92,9 @@ if(isset($_GET['page'])){
     
 } else {
     
-    /*** homepagina ***/
-    $tpl['body_id'] = "home";	
-    
-    //content
-    $tpl['rechts']        = getHome();
-    $tpl['paginaScripts'] = getScriptElements("js/home.js"); 
+    $tpl['body_id']         = "home";	
+    $tpl['rechts']          = getHome();
+    $tpl['paginaScripts']   = getScriptElements("js/home.js"); 
 		
 }
 
