@@ -65,11 +65,11 @@ if(isset($_GET['page'])){
             break;		
 
         case "galerij":
-            /*** Fotogalerij ***/
-            $tpl['title']   = "de Plantenshop: fotogalerij"; 		
-            $tpl['body_id'] = "galerij";					
-            //content
-            $tpl['rechts']  = getGalerij();
+            $tpl['title']               = "de Plantenshop: fotogalerij"; 		
+            $tpl['body_id']             = "galerij";					
+            $tpl['rechts']              = getGalerij();
+            $tpl['paginaScripts']       = getScriptElements(array("js/vendor/jquery/lightbox2/js/lightbox.js"));  
+            $tpl['paginaStylesheets']   = getLinkElements("js/vendor/jquery/lightbox2/css/lightbox.css");            
 
             break;
 
