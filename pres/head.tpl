@@ -30,6 +30,10 @@
 <script src="js/vendor/jquery/external/jquery/jquery.js"></script>
 <script src="js/vendor/jquery/jquery-ui.min.js"></script> 
 
+<script type='text/javascript' src='js/vendor/jquery/jquery-validation-1.19.0/localization/jquery.datepicker-nl-BE.js'></script>
+<script type='text/javascript' src='js/vendor/jquery/jquery-validation-1.19.0/localization/jquery.datepicker-fr.js'></script>
+<script type='text/javascript' src='js/vendor/jquery/jquery-validation-1.19.0/localization/jquery.datepicker-de.js'></script> 
+
 <!-- pagina-gebonden JS scripts-->
 {$paginaScripts}
 

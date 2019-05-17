@@ -46,4 +46,12 @@ $(function() {
             form.submit();
         }
     });
+    
+    $.datepicker.setDefaults($.datepicker.regional['nl-BE']); 
+    $("#geboren").datepicker({
+        dateFormat: "yy-mm-dd",
+        yearRange: '-80:+00',
+        changeMonth: true,
+        changeYear: true
+    });
 });
