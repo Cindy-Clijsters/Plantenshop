@@ -52,7 +52,9 @@ if(isset($_GET['page'])){
             
             //content
             $tpl['rechts']        = getPlanten($soort_id, $kleur, $hoogte_min, $hoogte_max);
-            $tpl['paginaScripts'] = getScriptElements("js/shop.js");
+            
+            $tpl['paginaScripts']     = getScriptElements(array("js/vendor/jquery/data-tables/dataTables.js", "js/shop.js"));
+            $tpl['paginaStylesheets'] = getLinkElements("js/vendor/jquery/data-tables/dataTables.css");            
 
             break;
 

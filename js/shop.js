@@ -46,6 +46,9 @@ $(function() {
         .first().attr({'title' : 'Minimum hoogte'})
         .end()
         .last().attr({'title' : 'Maximum hoogte'})
+
+    // datatables
+    $('#plantenlijst').dataTable();    
     
 });
 
