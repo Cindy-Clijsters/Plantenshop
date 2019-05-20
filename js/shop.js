@@ -48,7 +48,26 @@ $(function() {
         .last().attr({'title' : 'Maximum hoogte'})
 
     // datatables
-    $('#plantenlijst').dataTable();    
+    $("#plantenlijst").dataTable({
+        "bPaginate": true,
+        "iDisplayLength": 20,
+        /*"iDisplayStart": 20,*/
+        "sPaginationType": "full_numbers",
+        "aLengthMenu": [[10, 25, 50, -1], [10, 25, 50, "Alle records"]],
+        "bSort": true,
+        "bProcessing": true,
+        "aaSorting": [[6,'asc'], [2,'desc']],
+        "aoColumnDefs": [
+            { "bVisible": false, "aTargets": [ 5 ] },
+            { "bSortable": false, "aTargets": [ 2, 6 ] },
+            { "asSorting": [ "desc" ], "aTargets": [ 3 ] },
+            { "bSearchable": false, "sTitle": "Rubriek", "aTargets": [ 6 ] },
+            { "sTitle": "Lengte", "sWidth": "5%", "aTargets": [ 2 ] },
+            { "sClass": "dt_fluo", "aTargets": [ 0 ] },
+            
+        ],
+        "oLanguage": {"sUrl": "js/vendor/jquery/data-tables/datatables.nederlands.txt"}
+    });    
     
 });
 
